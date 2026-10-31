@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadson Cley | Engenharia de Software & Produto</title>
+    <style>
+        :root {
+            --primary: #ea1d2c; /* Vermelho iFood para dar o match */
+            --dark: #1f1f1f;
+            --light: #f7f7f7;
+            --text: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        h2 {
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 8px;
+            color: var(--dark);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--dark);
+        }
+        .badge {
+            background-color: #e3e3e3;
+            color: #555;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .contact-btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        .contact-btn.secondary {
+            background-color: var(--dark);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nadson Cley</h1>
+        <p>Engenheiro de Software em Formação (IFAM) & Especialista em Infraestrutura de TI</p>
+    </header>
+
+    <div class="container">
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Profissional com mais de 10 anos de experiência sólida no setor de tecnologia, suporte avançado e infraestrutura. Atualmente no 8º período de Engenharia de Software no IFAM e atuando no TRT-11. Minha paixão é construir produtos de ponta a ponta, unindo engenharia reversa de regras complexas, código limpo e usabilidade para criar soluções de alto impacto real.</p>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos em Destaque (Portfólio de Produto)</h2>
+            <div class="grid">
+                
+                <!-- PROJETO 1: APP ENERGIA -->
+                <div class="card">
+                    <h3>App de Auditoria de Energia Solar</h3>
+                    <p>Aplicativo móvel nativo <em>offline-first</em> desenvolvido para solucionar a falta de transparência no faturamento de créditos solares (Grupo B/ANEEL).</p>
+                    <p><strong>Destaques de Produto:</strong> Aritmética decimal exata para precisão de centavos, interface responsiva para celulares/tablets, integração nativa para compartilhamento (WhatsApp, e-mail, redes) e botão dedicado para impressão direta.</p>
+                    <div>
+                        <span class="badge">Kotlin</span>
+                        <span class="badge">Android SDK</span>
+                        <span class="badge">Engenharia Reversa</span>
+                        <span class="badge">UX/UI</span>
+                    </div>
+                </div>
+
+                <!-- PROJETO 2: TRT-11 -->
+                <div class="card">
+                    <h3>Automações de Processos no TRT-11</h3>
+                    <p>Desenvolvimento e otimização de ferramentas internas para o Tribunal Regional do Trabalho.</p>
+                    <p><strong>Destaques de Produto:</strong> Criação de scripts e sistemas de gerenciamento que automatizam rotinas diárias repetitivas da equipe, limpando gargalos operacionais e manuseando bases MySQL.</p>
+                    <div>
+                        <span class="badge">Python</span>
+                        <span class="badge">Django</span>
+                        <span class="badge">MySQL</span>
+                        <span class="badge">Automação</span>
+                    </div>
+                </div>
+
+                <!-- PROJETO 3: RIGEL -->
+                <div class="card">
+                    <h3>Projeto RIGEL (IFAM)</h3>
+                    <p>Sistema completo de agendamento focado na gestão de manutenção de máquinas industriais.</p>
+                    <p><strong>Destaques de Produto:</strong> Modelagem de requisitos funcionais e estruturação do banco de dados relacional para otimizar os fluxos de trabalho do campus.</p>
+                    <div>
+                        <span class="badge">Lógica de Programação</span>
+                        <span class="badge">Modelagem de Dados</span>
+                        <span class="badge">Engenharia de Software</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Vamos Construir o Futuro?</h2>
+            <p>Se você veio através do programa de seleção <strong>GEN IA do iFood</strong>, sinta-se à vontade para explorar meus repositórios ou entrar em contato direto:</p>
+            <a href="mailto:nadson.cley@hotmail.com" class="contact-btn">Enviar E-mail</a>
+            <a href="https://github.com/ncba1980" target="_blank" class="contact-btn secondary">Ver Meu GitHub</a>
+        </section>
+    </div>
+
+</body>
+</html>
